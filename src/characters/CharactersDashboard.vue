@@ -59,9 +59,9 @@
     <span slot="gender" slot-scope="gender">
       {{ gender.toLowerCase() }}
     </span>
-    <div class="tag-container" slot="films" slot-scope="films">
+    <span slot="films" slot-scope="films">
       <Tag v-for="film in films" color="blue" :key="film.id">{{ film.title }}</Tag>
-    </div>
+    </span>
   </Table>
 </template>
 
@@ -164,12 +164,6 @@ export default {
 </script>
 
 <style scoped>
-.tag-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 15%;
-}
-
 .custom-filter-dropdown {
   padding: 8px;
   border-radius: 4px;
