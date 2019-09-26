@@ -8,16 +8,6 @@
   </div>
 </template>
 
-<script>
-import gql from 'graphql-tag';
-
-export default {
-  name: 'app',
-
-  async created() {},
-};
-</script>
-
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
